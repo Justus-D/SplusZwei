@@ -49,8 +49,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    // https://github.com/championswimmer/vuex-persist
-    { src: '@/plugins/vuex-persist', mode: 'client' },
+    { src: '~/plugins/persistedStateCookie.js' },
+    { src: '~/plugins/persistedStateLocalStorage.js', mode: 'client' },
     // https://github.com/Inndy/vue-clipboard2
     '@/plugins/vue-clipboard2',
     // https://github.com/dumptyd/vue-css-donut-chart

@@ -6,6 +6,7 @@ export const scalarArraysEqual = (array1, array2) =>
 export const range = (lower, upper) => Array.from(Array(upper - lower), (x, i) => lower + i);
 
 export const SEMESTER_WEEK_1 = 9; // TODO change this in WS22, set to first calendar week of the semester
+export const SEMESTER_STRING = 'ss22' // TODO change this in WS22
 
 export function customTimetableToRoute (customTimetable) {
   const query = {

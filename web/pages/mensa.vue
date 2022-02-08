@@ -32,7 +32,7 @@
       </div>
     </div>
     <v-divider class="my-1" />
-    <no-ssr>
+    <client-only>
       <v-alert
         v-if="noMealsAvailable"
         type="info"
@@ -85,7 +85,7 @@
           </template>
         </v-carousel>
       </div>
-    </no-ssr>
+    </client-only>
   </v-container>
 </template>
 

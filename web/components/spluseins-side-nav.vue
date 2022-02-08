@@ -10,17 +10,19 @@
     width="350"
   >
     <basic-utilities-list />
-    <v-divider v-if="hasCustomTimetables" />
-    <custom-timetables-list v-if="hasCustomTimetables" />
-    <v-divider v-if="hasFavoriteTimetables" />
-    <favorite-timetables-list v-if="hasFavoriteTimetables" />
+    <client-only>
+      <v-divider v-if="hasCustomTimetables" />
+      <custom-timetables-list v-if="hasCustomTimetables" />
+      <v-divider v-if="hasFavoriteTimetables" />
+      <favorite-timetables-list v-if="hasFavoriteTimetables" />
+    </client-only>
     <v-divider />
     <general-timetables-list />
-    <no-ssr>
+    <client-only>
       <install-button-list
         class="stick-bottom"
       />
-    </no-ssr>
+    </client-only>
   </v-navigation-drawer>
 </template>
 

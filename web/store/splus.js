@@ -3,7 +3,7 @@ import colors from 'vuetify/lib/util/colors'
 import * as chroma from '../lib/chroma';
 
 import TIMETABLES from '~/assets/timetables.json';
-import { SEMESTER_WEEK_1, shortenTimetableDegree, uniq, customTimetableToRoute, scalarArraysEqual } from '~/lib/util';
+import { SEMESTER_WEEK_1, SEMESTER_STRING, shortenTimetableDegree, uniq, customTimetableToRoute, scalarArraysEqual } from '~/lib/util';
 
 const formatDayjs = (date) => { return date.format('YYYY-MM-DD'); };
 
@@ -101,6 +101,7 @@ export const state = () => ({
   customSchedules: {},
   favoriteSchedules: [],
   subscribedTimetable: {},
+  storedSemester: 'ws21', // todo ws 22 change me to SEMESTER_STRING variable
   /**
    * Events
    */
@@ -283,6 +284,14 @@ export const mutations = {
   },
   setSubscribedTimetable (state, timetable) {
     state.subscribedTimetable = timetable;
+  },
+  removeOudatedTables (state) {
+    if (state.storedSemester !== SEMESTER_STRING) {
+      state.customSchedules = {};
+      state.favoriteSchedules = [];
+      state.subscribedTimetable = {};
+      state.storedSemester = SEMESTER_STRING;
+    }
   }
 };
 

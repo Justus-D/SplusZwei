@@ -22,7 +22,7 @@
             "type": "node",
             "request": "launch",
             "name": "Nuxt Server",
-            "runtimeVersion": "14.15.4",
+            "runtimeVersion": "16.13.2",
             "args": [
                 "dev"
             ],

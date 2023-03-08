@@ -2,7 +2,7 @@ import VuexPersistence from 'vuex-persist';
 
 export default ({ store }) => {
   window.onNuxtReady(() => new VuexPersistence({
-    key: 'spluseins',
+    key: 'spluszwei',
     // pass through (https://github.com/championswimmer/vuex-persist/blob/master/src/index.ts#L211)
     saveState: (key, state, storage) => storage.setItem(key, JSON.stringify(state)),
     restoreState: (key, storage) => {

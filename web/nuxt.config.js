@@ -8,9 +8,9 @@ export default {
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s - SplusEins',
+    titleTemplate: '%s - SplusZwei',
     meta: [
-      { hid: 'keywords', name: 'keywords', content: 'SplusEins, Splus1, splus1, Sommersemester 2020, SS20, Ostfalia, Stundenplan, Busplan, Bus, Mensaplan, Mensa, Semesterplan, Plan, Wolfenbüttel, Suderburg, Wolfsburg, Salzgitter, Informatik, Bau, Wasser, Boden, Fahrzeugtechnik, Gesundheitswesen, Verkehr, Sport, Tourismus, Medien, Soziale Arbeit, Elektrotechnik, Recht, Versorgungstechnik, Wahlfächer, Wahlpflichtfächer' },
+      { hid: 'keywords', name: 'keywords', content: 'SplusZwei, Splus1, splus1, Sommersemester 2020, SS20, Ostfalia, Stundenplan, Busplan, Bus, Mensaplan, Mensa, Semesterplan, Plan, Wolfenbüttel, Suderburg, Wolfsburg, Salzgitter, Informatik, Bau, Wasser, Boden, Fahrzeugtechnik, Gesundheitswesen, Verkehr, Sport, Tourismus, Medien, Soziale Arbeit, Elektrotechnik, Recht, Versorgungstechnik, Wahlfächer, Wahlpflichtfächer' },
       { hid: 'google-site-verification', name: 'google-site-verification', content: 'EBsrsgaLbFe2iWIzVaE77k6bO0BtpcgBVLXm5DJzgUc' }
     ]
   },
@@ -21,9 +21,9 @@ export default {
   meta: {
     nativeUI: true,
     lang: 'de',
-    name: 'SplusEins',
-    author: 'SplusEins-Team',
-    ogHost: 'https://spluseins.de',
+    name: 'SplusZwei',
+    author: 'SplusZwei-Team',
+    ogHost: 'https://spluszwei.de',
     ogImage: '/logo.png'
   },
 
